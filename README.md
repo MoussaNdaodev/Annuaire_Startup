@@ -17,18 +17,16 @@ ODD 9 — Industrie, innovation et infrastructure
 
 ## Captures d'écran
 
-> Ajoute ici des captures d'écran de ton application (écran liste, écran détail, formulaire).
->
-> Pour générer des captures sur Android : `flutter screenshot`
-> Ou utilise un émulateur et fais une capture d'écran manuellement.
->
-> Exemple :
-> ```
-> screenshots/
->   liste.png
->   detail.png
->   formulaire.png
-> ```
+Les captures d'écran sont disponibles dans le dossier `captures/` :
+
+| Écran | Aperçu |
+|-------|--------|
+| Accueil | `captures/Acceuil.jpeg` |
+| Détail d'une startup | `captures/ecran details startup.jpeg` |
+| Formulaire d'ajout | `captures/ecran formulaire ajouter une startup.jpeg` |
+| Formulaire de modification | `captures/ecran modifier une startup.jpeg` |
+| Confirmation de suppression | `captures/ecran formulaire supprimer une startup.jpeg` |
+| Résultat filtre par secteur | `captures/resultats filtre par secteur.jpeg` |
 
 ## Technologies
 
@@ -52,7 +50,6 @@ lib/
 ├── routes/                   # Routes nommées
 ├── screens/                  # Écrans (Liste, Détail, Formulaire, À propos)
 └── widgets/                  # Composants réutilisables
-docs/                         # Documentation du projet
 ```
 
 ## Pour commencer
@@ -62,28 +59,11 @@ flutter pub get
 flutter run
 ```
 
-## Icône de l'application
+## Dépôt GitHub
 
-Pour personnaliser l'icône de l'application :
-1. Crée un dossier `assets/` et place une image `icon.png` (1024x1024 px)
-2. Ajoute `flutter_launcher_icons` dans `pubspec.yaml` en dev_dependencies
-3. Ajoute la configuration suivante dans `pubspec.yaml` :
-   ```yaml
-   flutter_launcher_icons:
-     android: true
-     ios: true
-     windows: true
-     image_path: "assets/icon.png"
-   ```
-4. Exécute : `flutter pub get && dart run flutter_launcher_icons`
-
-## Documentation
-
-Consultez le dossier `docs/` pour la documentation complète :
-- `01_modelisation_merise.md` — Modélisation Merise (MCD, MLD, dictionnaire des données)
-- `02_design_ux_ui.md` — Design system, charte graphique, wireframes
-- `03_decoupage_conception.md` — Découpage et checklist de conformité
-- `04_packages.md` — Justification des packages utilisés
+```bash
+https://github.com/MoussaNdaodev/Annuaire_Startup
+```
 
 ## Build
 
