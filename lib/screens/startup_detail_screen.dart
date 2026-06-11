@@ -57,8 +57,6 @@ class StartupDetailScreen extends StatelessWidget {
               const SizedBox(height: 16),
               _DescriptionSection(description: startup.description!),
             ],
-            const SizedBox(height: 16),
-            _DataSourceHint(),
           ],
         ),
       ),
@@ -284,32 +282,4 @@ class _DescriptionSection extends StatelessWidget {
   }
 }
 
-class _DataSourceHint extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.all(16),
-      decoration: BoxDecoration(
-        color: AppTheme.success.withValues(alpha: 0.08),
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Row(
-        children: [
-          Icon(Icons.check_circle_outline, size: 18, color: AppTheme.success),
-          const SizedBox(width: 12),
-          const Expanded(
-            child: Text(
-              '10 startups senegalaises reelles collectees en juin 2026.',
-              style: TextStyle(
-                fontSize: 13,
-                color: AppTheme.textSecondary,
-                height: 1.4,
-              ),
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-}
+
